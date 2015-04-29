@@ -33,9 +33,10 @@ public class GhostscriptLibraryLoader {
 	    String arch = System.getProperty("sun.arch.data.model");
 
 	    libName = "gsdll" + arch;
-
 	}
-
+	
+	
+	
 	return (GhostscriptLibrary) Native.loadLibrary(libName,
 		GhostscriptLibrary.class);
     }
